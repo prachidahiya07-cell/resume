@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Elegant Profile Card</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #f3e8ff, #e0f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 380px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Header */
+    .header {
+        background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .header h2 {
+        color: #1f2937;
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+
+    .header p {
+        color: #374151;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    /* Content */
+    .content {
+        padding: 22px;
+        display: grid;
+        row-gap: 14px;
+    }
+
+    .info {
+        background: #f8fafc;
+        border-left: 5px solid #a5b4fc;
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #374151;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .info i {
+        color: #6d28d9;
+        font-size: 18px;
+        min-width: 20px;
+    }
+
+    .info span {
+        font-weight: bold;
+        color: #6d28d9;
+    }
+
+    /* Skills */
+    .skills {
+        display: flex;
+        gap: 10px;
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        background: linear-gradient(135deg, #d1fae5, #ecfeff);
+        color: #065f46;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    /* Footer */
+    .footer {
+        background: #f1f5f9;
+        padding: 16px;
+        text-align: center;
+        font-size: 14px;
+        color: #475569;
+        font-weight: 500;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="header">
+        <h2>Prachi Dahiya</h2>
+        <p><i class="fa-solid fa-laptop-code"></i> Aspiring Software Engineer</p>
+    </div>
+
+    <div class="content">
+
+        <div class="info">
+            <i class="fa-solid fa-phone"></i>
+            <span>Mobile:</span> 8295471660
+        </div>
+
+        <div class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email:</span> 24bai70816@cuchd.in
+        </div>
+
+        <div class="info">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>University:</span> Chandigarh University
+        </div>
+
+        <div class="info">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills:</span>
+            <div class="skills">
+                <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="skill">C++</div>
+                <div class="skill">C</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <i class="fa-solid fa-user-graduate"></i> Student at Chandigarh University
+    </div>
+
+</div>
+
+</body>
+</html>
